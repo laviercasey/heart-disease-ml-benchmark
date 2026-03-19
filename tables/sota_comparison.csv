@@ -1,0 +1,8 @@
+Reference,Dataset,n,Method,Accuracy,ROC-AUC,Notes
+Ali et al. (2021),Cleveland UCI,303,SVM + RF Ensemble,0.903,0.953,SMOTE oversampling
+Mohan et al. (2019),Cleveland UCI,303,Hybrid RF+LR,0.883,nan,Feature selection via HRFLM
+Latha & Jeeva (2019),Cleveland UCI,303,Weighted Ensemble,0.850,nan,NB+DT+SVM ensemble
+Dissanayake et al. (2021),Cleveland UCI,303,XGBoost,0.877,0.921,GridSearchCV tuning
+Rajdhan et al. (2020),Cleveland UCI,303,Random Forest,0.836,nan,No hyperparameter tuning
+Ours (Stacking),Multi-center,1904,Stacking + Platt cal.,0.869,0.931,"DCA + SHAP consensus, n=1904"
+Ours (CatBoost),Multi-center,1904,CatBoost + Optuna,0.882,0.948,Best single model
